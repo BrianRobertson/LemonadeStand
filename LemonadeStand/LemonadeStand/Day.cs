@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Day
+    public class Day
     {
         Weather weather = new Weather();
         Customer customer = new Customer();
+
+       public void SetUpDay()
+        {
+       //     GetWeather();
+        }
+
     }
 }

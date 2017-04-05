@@ -8,23 +8,23 @@ namespace LemonadeStand
 {
     public class Player
     {
-        string name;
-        Inventory inventory;
-        Wallet wallet;
-        Recipe recipe;
+        public string name;
+        public Inventory inventory;
+        public Wallet wallet;
+        public Recipe recipe;
 
         public Player()
         {
-            Inventory inventory = new Inventory();
-            Wallet wallet = new Wallet();
-            Recipe recipe = new Recipe();
+            name = "";
+            inventory = new Inventory();
+            wallet = new Wallet();
+            recipe = new Recipe();
         }
 
-        public string SetName()
+        public void SetName()
         {
             Console.WriteLine("What is your player name?");
             name = Console.ReadLine();
-            return name;
         }
     }
 }

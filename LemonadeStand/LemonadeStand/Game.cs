@@ -8,20 +8,29 @@ namespace LemonadeStand
 {
     public class Game
     {
-        Player player1 = new Player();
-        Day day = new Day();
-        Store store = new Store();
+        public Player player;
+        public Store store;
+        public Game()
+        {
+            player = new Player();
+            store = new Store();
+        }
 
         public void RunGame()
         {
-        SetUpGame();
+            SetUpGame();
+        //    List<Day> daysOfTheWeek = new List<Day>();
+        //for (int index = 0; index <= 7; index++)
+        //{
+
+ //       Day.SetUpDay();
         }
+        // End of Season?
 
         public void SetUpGame()
         {
-            Console.WriteLine("Welcome to Lemonade Stand! Instructions go here.");
-            player1.SetName();
+            UserInterface.DisplayGameRules();
+            player.SetName();
         }
-
     }
 }

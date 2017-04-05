@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class Inventory
+    public class Inventory
     {
+        public List<Cup> cups;
+        public List<Lemon> lemons;
+        public List<Sugar> cupsOfSugar;
+        public List<Ice> iceCubes;
+        public Inventory()
+        {
+            cups = new List<Cup>();
+            lemons = new List<Lemon>();
+            cupsOfSugar = new List<Sugar>();
+            iceCubes = new List<Ice>();
+        }
     }
 }

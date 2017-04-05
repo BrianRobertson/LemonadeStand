@@ -8,5 +8,11 @@ namespace LemonadeStand
 {
     public class Cup : Item
     {
+        public Cup()
+        {
+            name = "Cup";
+            packageQty = 25;
+            packagePrice = 0.75;
+        }
     }
 }

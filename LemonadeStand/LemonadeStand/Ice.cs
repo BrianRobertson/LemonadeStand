@@ -8,5 +8,11 @@ namespace LemonadeStand
 {
     public class Ice : Item
     {
+        public Ice()
+        {
+            name = "IceCube";
+            packageQty = 100;
+            packagePrice = 0.75;
+        }
     }
 }

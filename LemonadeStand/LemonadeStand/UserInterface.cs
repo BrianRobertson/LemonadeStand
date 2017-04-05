@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    class UserInterface
+    public static class UserInterface
     {
-        public void GameOptions()
+        public static void DisplayGameRules()
         {
-//            Console.WriteLine("Would you like to play? \n 1. Yes \n 2. No");
-//                string input = Console.Read();
-//                switch (input)
-//                case input == "1":
-
+            Console.WriteLine("Welcome to Lemonade Stand! Rules go here.");
         }
     }
 }
