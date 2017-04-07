@@ -10,6 +10,7 @@ namespace LemonadeStand
     {
         public Player player;
         public Store store;
+        public Day day;
         public Game()
         {
             player = new Player();
@@ -19,18 +20,24 @@ namespace LemonadeStand
         public void RunGame()
         {
             SetUpGame();
-        //    List<Day> daysOfTheWeek = new List<Day>();
-        //for (int index = 0; index <= 7; index++)
-        //{
-
- //       Day.SetUpDay();
+            RunWeek();
+            
+            //End of Season goes here.
         }
-        // End of Season?
-
         public void SetUpGame()
         {
             UserInterface.DisplayGameRules();
             player.SetName();
+        }
+        public void RunWeek()
+        {
+            for (int index = 1; index <= 7; index++)
+            {
+                day = new Day();
+                day.SetUpDay(index);
+                UserInterface.DisplayBeginningOfDayReport(player, day);
+                store.VisitStore(player);
+            }
         }
     }
 }

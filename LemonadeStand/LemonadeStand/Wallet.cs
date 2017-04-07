@@ -8,27 +8,28 @@ namespace LemonadeStand
 {
     public class Wallet
     {
-        public double amount;
+        public double balance;
+
         public Wallet()
         {
-            amount = 20.00;
+            balance = 20.00;
         }
         public bool ValidateSufficientFunds(double costs)
         {
             bool sufficientFunds = true;
-            if (costs > amount)
+            if (costs > balance)
                 sufficientFunds = false;
             return sufficientFunds;
         }
         public void AddSalesToWallet(double sales)
         {
-            amount = amount + sales;
+            balance = balance + sales;
 //            Console.WriteLine(amount);
 //            Console.ReadKey();
         }
         public void RemoveCostsFromWallet(double costs)
         {
-            amount = amount - costs;
+            balance = balance - costs;
 //            Console.WriteLine(amount);
 //            Console.ReadKey();
         }

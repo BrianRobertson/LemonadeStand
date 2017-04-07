@@ -8,13 +8,20 @@ namespace LemonadeStand
 {
     public class Day
     {
-        Weather weather = new Weather();
-        Customer customer = new Customer();
-
-       public void SetUpDay()
+        public int number;
+        public Weather weather;
+        public Customer customer;
+        public Day()
         {
-       //     GetWeather();
+            //constructor.
+            weather = new Weather();
+// customers will happen in the generate customer method.            customer = new Customer();
         }
 
+       public void SetUpDay(int value)
+        {
+            number = value;
+            weather.SetWeather();
+        }
     }
 }
