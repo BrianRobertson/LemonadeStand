@@ -24,7 +24,6 @@ namespace LemonadeStand
 
         public Store()
         {
-
             //constructor.
             cups = "Cups";
             cupPackageQty = 25;
@@ -65,8 +64,8 @@ namespace LemonadeStand
                     break;
                 case "5":
                     Console.WriteLine("Ready to make and sell lemonade.\n");
+//                  Go back to game.
                     break;
-//                  head back to game.
                 case "6":
                     Console.WriteLine("Go to Main Menu.\n");
                     UserInterface.MainMenu(player);
@@ -77,11 +76,10 @@ namespace LemonadeStand
                     break;
             }
         }
-
         public void ShopItems(Player player, string itemName, int qty, double price)
         {
             Console.WriteLine("Welcome to shopping.\n"
-           + $"{itemName } comes in packages of {qty} at {price}; "
+            + $"{itemName } comes in packages of {qty} at {price}; "
             + "\n1. Yes"
             + "\n2. No");
             string input = Console.ReadLine().ToLower().Trim();
@@ -99,11 +97,11 @@ namespace LemonadeStand
                     break;
                 default:
                     Console.WriteLine("Not a valid choice.\n");
-                    ShopItems(player, itemName,qty, price);
+                    ShopItems(player, itemName, qty, price);
                     break;
             }
         }
-            public void PurchaseItem(Player player, string itemName, int qty, double price)
+        public void PurchaseItem(Player player, string itemName, int qty, double price)
         {
             bool enoughMoney = player.wallet.CheckWallet(price);
             {
@@ -121,9 +119,5 @@ namespace LemonadeStand
                 }
             }
         }
-
-
-
-
     }
 }

@@ -26,7 +26,7 @@ namespace LemonadeStand
                 case "Cups":
                     AddCups(qty);
                     break;
-                case "Lemons":
+                case "Lemons": 
                     AddLemons(qty);
                     break;
                 case "Sugar":

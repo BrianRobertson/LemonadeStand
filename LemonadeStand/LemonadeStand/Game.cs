@@ -37,6 +37,16 @@ namespace LemonadeStand
                 day.SetUpDay(index);
                 UserInterface.DisplayBeginningOfDayReport(player, day);
                 store.VisitStore(player);
+                UserInterface.DisplayRecipeReport(player, day);
+
+                //Call method to change recipe for the day.
+                // what next?
+
+
+
+
+
+
             }
         }
     }

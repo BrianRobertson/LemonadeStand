@@ -60,5 +60,14 @@ namespace LemonadeStand
                 + $"\n Your current inventory is: cups: {player.inventory.cups.Count}, lemons: {player.inventory.lemons.Count}, sugar: {player.inventory.cupsOfSugar.Count}, ice: {player.inventory.iceCubes.Count}."
                 + " \n");
         }
+        public static void DisplayRecipeReport(Player player, Day day)
+        {
+            Console.WriteLine("Recipe report."
+            + $"\n Hello {player.name}, here is your report for Day: {day.number}"
+            + $"\n Today's forecast is: {day.weather.report}"
+            + $"\n How much are you charging today? currently your price per cup is set at: ${player.recipe.sellingPricePerCup}."
+            + $"\n Your pitcher holds 10 cups, lemons per pitcher: {player.recipe.lemonsPerPitcher}, cups of sugar per pitcher: {player.recipe.cupsOfSugarPerPitcher}, ice per cup: {player.recipe.iceCubesPerCup}."
+            + " \n");
+        }
     }
 }
