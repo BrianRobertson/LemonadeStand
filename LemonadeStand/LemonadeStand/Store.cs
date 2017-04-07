@@ -45,7 +45,9 @@ namespace LemonadeStand
          + "\n1. Cups"
          + "\n2. Lemons"
          + "\n3. Sugar"
-         + "\n4. Ice");
+         + "\n4. Ice"
+         + "\n5. No, I am ready to make and sell lemonade."
+         + "\n6. Go to main menu.");
             string input = Console.ReadLine().ToLower().Trim();
             switch (input)
             {
@@ -53,15 +55,19 @@ namespace LemonadeStand
                     ShopItems(player, cups, cupPackageQty, cupPackagePrice);
                     break;
                 case "2":
-                    Console.WriteLine("Test option.\n");
+                    ShopItems(player, lemons, lemonPackageQty, lemonPackagePrice);
                     break;
                 case "3":
-                    Console.WriteLine("Test option.\n");
+                    ShopItems(player, sugar, sugarPackageQty, sugarPackagePrice);
                     break;
                 case "4":
-                    Console.WriteLine("Test option.\n");
+                    ShopItems(player, ice, icePackageQty, icePackagePrice);
                     break;
                 case "5":
+                    Console.WriteLine("Ready to make and sell lemonade.\n");
+                    break;
+//                  head back to game.
+                case "6":
                     Console.WriteLine("Go to Main Menu.\n");
                     UserInterface.MainMenu(player);
                     break;
@@ -106,10 +112,12 @@ namespace LemonadeStand
                     player.wallet.SubtractFromWallet(price);
                     player.inventory.AddItems(itemName, qty);
                     UserInterface.InventoryUpdateReport(player);
+                    VisitStore(player);
                 }
                 else
                 {
-                    Console.WriteLine("Insufficient funds.");
+                    Console.WriteLine("Insufficient funds to make this particulair purchase.");
+                    VisitStore(player);
                 }
             }
         }

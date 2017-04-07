@@ -19,13 +19,52 @@ namespace LemonadeStand
             cupsOfSugar = new List<Sugar>();
             iceCubes = new List<Ice>();
         }
-
-        public void AddItems(string name, int value)
+        public void AddItems(string itemName, int qty)
         {
-            //add cups. needs to be generic. switch case to add to proper list.
-            for (int i = 0; i < value; i++)
+            switch (itemName)
+            {
+                case "Cups":
+                    AddCups(qty);
+                    break;
+                case "Lemons":
+                    AddLemons(qty);
+                    break;
+                case "Sugar":
+                    AddSugar(qty);
+                    break;
+                case "Ice":
+                    AddIce(qty);
+                    break;
+                default: 
+                    break;
+            }
+        }
+        public void AddCups(int qty)
+        {
+            for (int i = 0; i < qty; i++)
             {
                 cups.Add(new Cup());
+            }
+        }
+        public void AddLemons(int qty)
+        {
+            for (int i = 0; i < qty; i++)
+            {
+                lemons.Add(new Lemon());
+            }
+        }
+        public void AddSugar(int qty)
+        {
+            for (int i = 0; i < qty; i++)
+            {
+                cupsOfSugar.Add(new Sugar());
+            }
+        }
+        public void AddIce(int qty)
+        {
+            for (int i = 0; i < qty; i++)
+            {
+                iceCubes.Add(new Ice());
             }
         }
     }
