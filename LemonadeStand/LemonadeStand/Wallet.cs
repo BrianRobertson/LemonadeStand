@@ -14,24 +14,24 @@ namespace LemonadeStand
         {
             balance = 20.00;
         }
-        public bool ValidateSufficientFunds(double costs)
+        public bool CheckWallet(double amount)
         {
-            bool sufficientFunds = true;
-            if (costs > balance)
-                sufficientFunds = false;
-            return sufficientFunds;
+            if (balance - amount >= 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
-        public void AddSalesToWallet(double sales)
+        public void AddToWallet(double amount)
         {
-            balance = balance + sales;
-//            Console.WriteLine(amount);
-//            Console.ReadKey();
+            balance += amount;
         }
-        public void RemoveCostsFromWallet(double costs)
+        public void SubtractFromWallet(double amount)
         {
-            balance = balance - costs;
-//            Console.WriteLine(amount);
-//            Console.ReadKey();
+            balance -= amount;
         }
     }
 }
