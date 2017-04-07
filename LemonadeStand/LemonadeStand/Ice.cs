@@ -11,8 +11,8 @@ namespace LemonadeStand
         public Ice()
         {
             name = "IceCube";
-            packageQty = 100;
-            packagePrice = 0.75;
+//            packageQty = 100;
+//            packagePrice = 0.75;
         }
     }
 }

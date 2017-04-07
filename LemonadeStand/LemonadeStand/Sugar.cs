@@ -11,8 +11,8 @@ namespace LemonadeStand
         public Sugar()
         {
             name = "CupOfSugar";
-            packageQty = 8;
-            packagePrice = 0.80;
+//            packageQty = 8;
+//            packagePrice = 0.80;
         }
     }
 }

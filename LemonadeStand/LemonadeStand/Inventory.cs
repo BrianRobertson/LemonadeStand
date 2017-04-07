@@ -19,5 +19,14 @@ namespace LemonadeStand
             cupsOfSugar = new List<Sugar>();
             iceCubes = new List<Ice>();
         }
+
+        public void AddItems(string name, int value)
+        {
+            //add cups. needs to be generic. switch case to add to proper list.
+            for (int i = 0; i < value; i++)
+            {
+                cups.Add(new Cup());
+            }
+        }
     }
 }

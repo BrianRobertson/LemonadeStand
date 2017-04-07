@@ -51,5 +51,14 @@ namespace LemonadeStand
                 + $"\n Your current inventory is: cups: {player.inventory.cups.Count}, lemons: {player.inventory.lemons.Count}, sugar: {player.inventory.cupsOfSugar.Count}, ice: {player.inventory.iceCubes.Count}."
                 + " \n");
         }
+        public static void InventoryUpdateReport(Player player)//day removed for now.
+        {
+            Console.WriteLine("Inventory update."
+//                + $"\n Hello {player.name}, here is your report for Day: {day.number}"
+//                + $"\n Today's forecast is: {day.weather.report}"
+                + $"\n Your current wallet balance is: ${player.wallet.balance}."
+                + $"\n Your current inventory is: cups: {player.inventory.cups.Count}, lemons: {player.inventory.lemons.Count}, sugar: {player.inventory.cupsOfSugar.Count}, ice: {player.inventory.iceCubes.Count}."
+                + " \n");
+        }
     }
 }

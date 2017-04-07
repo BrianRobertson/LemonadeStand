@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand
 {
-    public abstract class Item
+    public class Item
     {
         public string name;
-        public int packageQty;
-        public double packagePrice;
+//        public int packageQty;
+//        public double packagePrice;
     }
 }
