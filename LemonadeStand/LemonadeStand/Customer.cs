@@ -11,23 +11,16 @@ namespace LemonadeStand
         public string name;
         public int propensityToBuy;
         public bool didBuy;
-        public Random random;
 
         public Customer()
         {
-            name = "Customer";
+            name = "customer";
             propensityToBuy = 0;
             didBuy = false;
-            random = new Random();
         }
-        public void GenerateCustomers(List<Customer> customers, int weatherFactor)
+        public void SetPropensityToBuy(int value)
         {
-            int customerCount = (weatherFactor * 10);
-            for (int i = 0; i < customerCount; i++)
-            {
-                customers.Add(new Customer());
-                propensityToBuy = random.Next(1, 7);
-            }
+            propensityToBuy = value;
         }
     }
 }
