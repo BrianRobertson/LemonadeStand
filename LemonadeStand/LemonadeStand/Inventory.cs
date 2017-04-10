@@ -67,5 +67,18 @@ namespace LemonadeStand
                 iceCubes.Add(new Ice());
             }
         }
+        public bool CheckInventory(Recipe recipe)
+        {
+            if (cups.Count >= recipe.cupsOfLemonadePerPitcher && lemons.Count >= recipe.lemonsPerPitcher 
+                && cupsOfSugar.Count >= recipe.cupsOfSugarPerPitcher 
+                && iceCubes.Count >= (recipe.iceCubesPerCup * recipe.cupsOfLemonadePerPitcher))
+            {
+                Console.WriteLine("Enough inventory to make lemonade");
+                return true;
+            }
+            else {
+                Console.WriteLine("Not enough inventory to make lemonade");
+                return false;          }
+        }
     }
 }

@@ -66,7 +66,7 @@ namespace LemonadeStand
             + $"\n Hello {player.name}, here is your report for Day: {day.number}"
             + $"\n Today's forecast is: {day.weather.report}"
             + $"\n How much are you charging today? currently your price per cup is set at: ${player.recipe.sellingPricePerCup}."
-            + $"\n Your pitcher holds 10 cups, lemons per pitcher: {player.recipe.lemonsPerPitcher}, cups of sugar per pitcher: {player.recipe.cupsOfSugarPerPitcher}, ice per cup: {player.recipe.iceCubesPerCup}."
+            + $"\n Your pitcher holds {player.recipe.cupsOfLemonadePerPitcher} cups of lemonade, lemons per pitcher: {player.recipe.lemonsPerPitcher}, cups of sugar per pitcher: {player.recipe.cupsOfSugarPerPitcher}, ice per cup: {player.recipe.iceCubesPerCup}."
             + " \n");
         }
     }

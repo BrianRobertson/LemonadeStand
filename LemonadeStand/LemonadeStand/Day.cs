@@ -10,18 +10,25 @@ namespace LemonadeStand
     {
         public int number;
         public Weather weather;
-        public Customer customer;
+        public List<Customer> customers;
         public Day()
         {
             //constructor.
             weather = new Weather();
-// customers will happen in the generate customer method.            customer = new Customer();
+            customers = new List <Customer>();
+
+            // customers will happen in the generate customer method.            customer = new Customer();
         }
 
-       public void SetUpDay(int value)
+       public void SetUpDay(int dayOfWeek)
         {
-            number = value;
-            weather.SetWeather();
+            number = dayOfWeek;
+            int weatherFactorweather = SetWeather();
+            Customer.GenerateCustomers(customers, weather.factor);
+        }
+        public void RunDay(Player player)
+        {
+
         }
     }
 }

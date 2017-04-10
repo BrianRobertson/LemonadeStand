@@ -13,6 +13,7 @@ namespace LemonadeStand
         public int lemonsPerPitcher;
         public int cupsOfSugarPerPitcher;
         public int iceCubesPerCup;
+        public int cupsOfLemonadePerPitcher;
         public Recipe()
         {
             sellingPricePerCup = 0.25;
@@ -20,6 +21,7 @@ namespace LemonadeStand
             lemonsPerPitcher = 4;
             cupsOfSugarPerPitcher = 4;
             iceCubesPerCup = 4;
+            cupsOfLemonadePerPitcher = 10;
         }
 
 // methods to change recipe go here.

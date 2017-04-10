@@ -38,8 +38,16 @@ namespace LemonadeStand
                 UserInterface.DisplayBeginningOfDayReport(player, day);
                 store.VisitStore(player);
                 UserInterface.DisplayRecipeReport(player, day);
-
                 //Call method to change recipe for the day.
+                if (player.inventory.CheckInventory(player.recipe) == true)
+                {
+                    continue;
+                }
+                else
+                {
+                    store.VisitStore(player);
+                }
+                Console.WriteLine($"We made it to the point of starting to get customers. We have:{day.customers.Count} today.");
                 // what next?
 
 
