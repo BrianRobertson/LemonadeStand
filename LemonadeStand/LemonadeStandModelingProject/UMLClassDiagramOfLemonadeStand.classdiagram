@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="38b51a24-f878-4139-ba44-3c0ac36f5fdd" name="UMLClassDiagramOfLemonadeStand" linkedPackageId="a2a202cd-7660-4133-b265-5180fbb1fe34" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="32f6a810-45a9-43a1-bd42-985d435d74ec">
-      <profileInstance Id="b0842ca6-5cce-4b85-ba1e-9c731e013b72" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="38a25bff-4343-4e53-bb60-864ebaebc1c5">
-      <profileInstance Id="e338f231-7a03-4c4c-9ab2-f72f2b5a9c5e" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="434c7bc5-5aca-4669-8f35-6ba92866b167" name="Program" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -327,10 +313,10 @@
               <referencedTypeMoniker Id="db52644e-e58f-4f3d-8af0-e3522cf23698" LastKnownName="int" />
             </type_NamedElement>
           </property>
-          <property Id="038fcedb-aa2a-4e49-ac0e-e2aa29a54671" name="upsOfLemonadePerPitcher" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="038fcedb-aa2a-4e49-ac0e-e2aa29a54671" name="cupsOfLemonadePerPitcher" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="0e5261b4-6397-45e3-af0d-e45bf305d693" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="e6e29bd2-3e61-478a-8b17-73bffbe71b31" LastKnownName="int" />
+              <referencedTypeMoniker Id="ee32792f-c539-4cd4-afae-2dafa80e45f7" LastKnownName="int" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -837,7 +823,7 @@
           <property Id="d3973bd0-c59e-4731-9208-41193873cdbf" name="didBuy" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="c218e865-a74f-4714-a741-996aa00c10ef" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="1b8b3a6e-0e69-4a7b-9fe0-e237f825bf01" LastKnownName="bool" />
+              <referencedTypeMoniker Id="0c9bd277-4122-44b3-b096-fa497667f043" LastKnownName="Boolean" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -969,11 +955,6 @@
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="1b8b3a6e-0e69-4a7b-9fe0-e237f825bf01" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
-        <elementDefinition Id="593717e8-6e24-4801-a52c-71d210d9d1f8" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="57503087-91b9-4525-bda0-c200fafb5352" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
         <elementDefinition Id="93fccc94-682e-44e4-b7bc-840141006c23" />
       </referencedType>
@@ -1010,11 +991,6 @@
     </packageHasNamedElement>
     <packageHasNamedElement>
       <referencedType Id="b8fd4451-dbe8-43e2-94bf-f558a476cddd" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
-        <elementDefinition Id="1d042e67-ea9a-458b-b6d9-e0bad8c892d5" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="e6e29bd2-3e61-478a-8b17-73bffbe71b31" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
         <elementDefinition Id="1d042e67-ea9a-458b-b6d9-e0bad8c892d5" />
       </referencedType>
     </packageHasNamedElement>
@@ -1123,8 +1099,37 @@
         <elementDefinition Id="93fccc94-682e-44e4-b7bc-840141006c23" />
       </referencedType>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="45d59438-6685-4592-90b3-a5750b32f90a" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ee32792f-c539-4cd4-afae-2dafa80e45f7" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="1d042e67-ea9a-458b-b6d9-e0bad8c892d5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0c9bd277-4122-44b3-b096-fa497667f043" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="a2a202cd-7660-4133-b265-5180fbb1fe34" name="LemonadeStandModelingProject">
     <elementDefinition Id="058c4528-cfbc-4598-92f8-360c156c02cf" />
+    <profileInstances>
+      <packageHasProfileInstances Id="32f6a810-45a9-43a1-bd42-985d435d74ec">
+        <profileInstance Id="b0842ca6-5cce-4b85-ba1e-9c731e013b72" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="38a25bff-4343-4e53-bb60-864ebaebc1c5">
+        <profileInstance Id="e338f231-7a03-4c4c-9ab2-f72f2b5a9c5e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

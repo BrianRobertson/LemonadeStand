@@ -736,7 +736,7 @@
           </property>
           <property
             Id="0e5261b4-6397-45e3-af0d-e45bf305d693"
-            name="upsOfLemonadePerPitcher"
+            name="cupsOfLemonadePerPitcher"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1819,9 +1819,9 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="593717e8-6e24-4801-a52c-71d210d9d1f8"
-                LastKnownName="bool"
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
                 LastKnownLocation="LemonadeStandModelingProject.uml" />
             </type_NamedElement>
           </property>
