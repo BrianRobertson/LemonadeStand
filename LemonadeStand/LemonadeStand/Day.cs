@@ -12,13 +12,13 @@ namespace LemonadeStand
         public Weather weather;
         public List<Customer> customers;
         public Random random;
+        public int customersToday;
         public Day()
         {
             //constructor.
             weather = new Weather();
             customers = new List <Customer>();
             random = new Random();
-            // customers will happen in the generate customer method.        customer = new Customer();
         }
 
        public void SetUpDay(int dayOfWeek)
@@ -36,9 +36,8 @@ namespace LemonadeStand
             int customerCount = (weatherFactor * 10);
             for (int i = 0; i < customerCount; i++)
             {
-                customers.Add(new Customer());
                 int personality = random.Next(1, 7);
-//                Customer.SetPropensityToBuy(personality);
+                customers.Add(new Customer(personality));
             }
         }
 

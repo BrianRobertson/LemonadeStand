@@ -47,7 +47,7 @@ namespace LemonadeStand
                 {
                     store.VisitStore(player);
                 }
-                Console.WriteLine($"We made it to the point of starting to get customers. We have:{day.customers.Count} today.");
+                Console.WriteLine($"We have:{day.customers.Count} today.");
                 // what next?
 
 

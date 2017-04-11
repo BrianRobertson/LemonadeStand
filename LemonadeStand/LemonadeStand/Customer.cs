@@ -12,10 +12,10 @@ namespace LemonadeStand
         public int propensityToBuy;
         public bool didBuy;
 
-        public Customer()
+        public Customer(int random)
         {
             name = "customer";
-            propensityToBuy = 0;
+            propensityToBuy = random;
             didBuy = false;
         }
         public void SetPropensityToBuy(int value)
